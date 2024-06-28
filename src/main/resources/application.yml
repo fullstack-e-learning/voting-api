@@ -3,5 +3,9 @@ spring:
     name: @project.artifactId@
   data:
     redis:
-      host: ${REDIS_HOST:localhost}
-      port: ${REDIS_PORT:6379}
+      #host: ${REDIS_HOST:localhost}
+      #port: ${REDIS_PORT:6379}
+      #password:
+      #username:
+      url: ${REDIS_URL:redis://localhost:6379}
+      channel-name: ${REDIS_CHANNEL_NAME:channel}
